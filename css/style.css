@@ -1,0 +1,954 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+body .myTutContainer {
+  width: 82%;
+  margin: auto;
+}
+
+#experience {
+  font-family: "Heebo", sans-serif;
+  padding-top: 150px;
+  width: 100%;
+}
+#experience .ex-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 140px;
+}
+#experience .ex-content .ex-left .dev {
+  color: #3BBCA7;
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+#experience .ex-content .ex-left .learn {
+  color: #072F60;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+}
+#experience .ex-content .ex-left p {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 45px;
+}
+#experience .ex-content .ex-left .button-wrapper a {
+  text-decoration: none;
+  background-color: #3BBCA7;
+  padding: 16px 26px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 2px;
+  transition: ease-in-out 0.2s;
+}
+#experience .ex-content .ex-left .button-wrapper a:hover {
+  background-color: #072F60;
+}
+#experience .ex-content .ex-right {
+  position: relative;
+}
+#experience .ex-content .ex-right .background {
+  position: relative;
+  width: 50%;
+  height: 500px;
+}
+#experience .ex-content .ex-right .background .blue-circle {
+  position: absolute;
+  left: -18%;
+  top: 2%;
+}
+#experience .ex-content .ex-right .background .points {
+  position: absolute;
+  z-index: 5;
+  left: 28%;
+  top: -2%;
+  width: 150px;
+  height: 150px;
+}
+#experience .ex-content .ex-right .background .points img {
+  width: 100%;
+  height: 100%;
+}
+#experience .ex-content .ex-right .background .yellow-circle {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  width: 250px;
+  height: 250px;
+}
+#experience .ex-content .ex-right .persons {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6%;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+}
+#experience .ex-content .ex-right .persons .orangeMan {
+  padding-top: 90px;
+  border-radius: 15px;
+}
+#experience .ex-content .ex-right .persons .blueMan {
+  border-radius: 15px;
+}
+
+#over {
+  font-family: "Heebo", sans-serif;
+}
+#over .info {
+  width: 100%;
+  padding: 40px 100px;
+  background-color: #052954;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#over .info .info-box {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+#over .info .info-box .info-content {
+  margin-top: 10px;
+  color: white;
+}
+#over .info .info-box .info-content h2 {
+  font-size: 22px;
+}
+#over .info .info-box .info-content p {
+  font-size: 15px;
+}
+#over .info .info-box .img-info {
+  margin-right: 30px;
+  width: 62px;
+  height: 76px;
+  align-items: end;
+}
+#over .info .info-box .img-info img {
+  width: 100%;
+  height: 100%;
+}
+
+#featured {
+  font-family: "Heebo", sans-serif;
+  padding: 110px 0;
+  color: #052954;
+}
+#featured .featured-wrapper .feature-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#featured .featured-wrapper .feature-head h2 {
+  font-weight: 600;
+  font-size: 36px;
+}
+#featured .featured-wrapper .feature-head .button-wrapper {
+  padding-top: 20px;
+  text-align: end;
+}
+#featured .featured-wrapper .feature-head .button-wrapper a {
+  text-decoration: none;
+  background-color: white;
+  padding: 16px 26px;
+  color: #3BBCA7;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 2px;
+  transition: ease-in-out 0.2s;
+  border: 1px solid #3BBCA7;
+}
+#featured .featured-wrapper .feature-head .button-wrapper a:hover {
+  background-color: #3BBCA7;
+  color: white;
+}
+#featured .topics {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+#featured .topics .topics-box {
+  text-decoration: none;
+  color: #052954;
+  font-weight: 500;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #f6f7f9;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
+}
+#featured .topics .topics-box:hover {
+  background-color: #052954;
+  color: white;
+}
+#featured .topics .topics-box .topics-content {
+  padding-top: 10px;
+  text-align: start;
+}
+#featured .topics .topics-box .topics-img {
+  margin-left: 20px;
+  width: 47px;
+  height: 47px;
+}
+#featured .topics .topics-box .topics-img img {
+  width: 100%;
+  height: 100%;
+}
+
+#top-rated {
+  font-family: "Heebo", sans-serif;
+}
+#top-rated .top {
+  color: #072F60;
+  padding-bottom: 100px;
+  position: relative;
+  font-size: 36px;
+  font-weight: 600;
+  z-index: 10;
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+#top-rated .top::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 0;
+  background-color: #ffd24d;
+  width: 160px;
+  height: 25px;
+  border-radius: 15px;
+}
+#top-rated .button-wrapper {
+  text-align: center;
+  padding: 110px 0;
+}
+#top-rated .button-wrapper a {
+  text-decoration: none;
+  background-color: #3BBCA7;
+  padding: 13px 26px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 2px;
+  transition: ease-in-out 0.2s;
+}
+#top-rated .button-wrapper a:hover {
+  background-color: #072F60;
+}
+#top-rated .tutorials {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+#top-rated .tutorials .icons i {
+  color: #3BBCA7;
+}
+#top-rated .tutorials .icons span {
+  margin-left: 5px;
+  color: #878787;
+  margin-right: 10px;
+}
+#top-rated .tutorials .absolute {
+  color: #052954;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.2s ease-in-out;
+}
+#top-rated .tutorials .absolute:hover {
+  color: #3BBCA7;
+}
+#top-rated .tutorials .tutorial-info {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  padding: 20px 0;
+}
+#top-rated .tutorials .tutorial-info a {
+  text-decoration: none;
+  background-color: #f1faf9;
+  padding: 7px;
+  text-align: center;
+  color: #3BBCA7;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 2px;
+  transition: ease-in-out 0.2s;
+}
+#top-rated .tutorials .tutorial-info a:hover {
+  background-color: #3BBCA7;
+  color: white;
+}
+#top-rated .tutorials .tutorial-info .tutorial-name {
+  display: inline-block;
+  font-size: 13px;
+}
+#top-rated .tutorials .tutorial-info h2 {
+  padding-top: 5px;
+  display: inline-block;
+  text-align: end;
+  font-size: 16px;
+  color: #052954;
+}
+#top-rated .tutorials .tutorial-teacher {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+#top-rated .tutorials .tutorial-teacher h6 {
+  display: inline-block;
+  width: 70%;
+  padding-top: 3px;
+  padding-left: 5px;
+  color: #878787;
+  font-weight: 400;
+  font-size: 15px;
+}
+#top-rated .tutorials .tutorial-teacher .avatar {
+  width: 10%;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+#top-rated .tutorials .tutorial-teacher .avatar img {
+  width: 100%;
+  height: 100%;
+}
+#top-rated .tutorials .tutorial-wrapper {
+  position: relative;
+  top: -10%;
+  transition: 0.2s ease-in-out;
+}
+#top-rated .tutorials .tutorial-wrapper:hover .tutorial-hover {
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+}
+#top-rated .tutorials .tutorial {
+  box-shadow: 0 0 10px rgba(198, 196, 196, 0.3725490196);
+  border-radius: 7px;
+  overflow: hidden;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+}
+#top-rated .tutorials .tutorial .tutorial-review .stars i {
+  display: inline-block;
+  color: #ffb60a;
+}
+#top-rated .tutorials .tutorial hr {
+  color: #666666;
+  width: 120%;
+  margin-left: -10%;
+}
+#top-rated .tutorials .tutorial .tutorial-review {
+  display: inline-block;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#top-rated .tutorials .tutorial .tutorial-img {
+  width: 100%;
+  height: 200px;
+}
+#top-rated .tutorials .tutorial .tutorial-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#top-rated .tutorials .tutorial-hover {
+  position: absolute;
+  left: -14%;
+  top: -2%;
+  background-color: white;
+  box-shadow: 0 0 30px rgba(59, 59, 59, 0.3725490196);
+  width: 128%;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+}
+#top-rated .tutorials .tutorial-hover .absolute {
+  font-size: 17px;
+}
+#top-rated .tutorials .tutorial-hover .tutorial-teacher {
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+#top-rated .tutorials .tutorial-hover .icons {
+  margin: 10px 0;
+}
+#top-rated .tutorials .tutorial-hover p {
+  font-size: 15px;
+  color: #666666;
+  line-height: 30px;
+}
+#top-rated .tutorials .tutorial-hover .preview {
+  margin-bottom: 45px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  background-color: #3BBCA7;
+  padding: 10px 26px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 2px;
+  transition: ease-in-out 0.2s;
+}
+#top-rated .tutorials .tutorial-hover .preview:hover {
+  background-color: #072F60;
+}
+
+#person {
+  padding-left: 0;
+  background-image: url("../imgs/back.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Heebo", sans-serif;
+}
+#person .person-wrapper {
+  margin-top: 20px;
+  padding-bottom: 12.5%;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 5%;
+}
+#person .person-wrapper .person-left {
+  position: relative;
+}
+#person .person-wrapper .person-left .circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #afe0fb;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  animation: moveCircle 15s linear infinite;
+  z-index: 1;
+}
+@keyframes moveCircle {
+  0% {
+    top: 60%;
+    left: 3%;
+  }
+  25% {
+    left: 3%;
+    top: 50%;
+  }
+  50% {
+    left: 10%;
+    top: 65%;
+  }
+  75% {
+    left: 25%;
+    top: 70%;
+  }
+  100% {
+    left: 3%;
+    top: 50%;
+  }
+}
+#person .person-wrapper .person-left h2 {
+  position: relative;
+  padding-top: 100px;
+  font-size: 36px;
+  color: #072F60;
+  font-weight: 600;
+  line-height: 46px;
+  z-index: 2;
+}
+#person .person-wrapper .person-left ul {
+  position: relative;
+  padding: 13px 0;
+  list-style: none;
+  color: #878787;
+  font-weight: 500;
+  font-size: 16px;
+  z-index: 2;
+}
+#person .person-wrapper .person-left ul li {
+  line-height: 40px;
+}
+#person .person-wrapper .person-left ul li i {
+  color: #3BBCA7;
+  margin-right: 5px;
+}
+#person .person-wrapper .person-left .get {
+  text-decoration: none;
+  background-color: #3BBCA7;
+  padding: 15px 25px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 2px;
+  transition: ease-in-out 0.2s;
+}
+#person .person-wrapper .person-left .get:hover {
+  background-color: #072F60;
+}
+#person .person-wrapper .person-right {
+  position: relative;
+}
+#person .person-wrapper .person-right .man {
+  position: absolute;
+  z-index: 4;
+  width: 475px;
+  height: 507px;
+  top: 10%;
+  left: 22%;
+}
+#person .person-wrapper .person-right .man img {
+  width: 100%;
+  height: 100%;
+}
+#person .person-wrapper .person-right .points {
+  left: 4%;
+  top: 35%;
+  position: absolute;
+  z-index: 3;
+}
+#person .person-wrapper .person-right .points img {
+  width: 100%;
+  height: 100%;
+}
+#person .person-wrapper .person-right .yellowcircle {
+  top: 10%;
+  left: 20%;
+  width: 510px;
+  height: 500px;
+  z-index: 2;
+  position: absolute;
+}
+#person .person-wrapper .person-right .yellowcircle img {
+  width: 100%;
+  height: 100%;
+}
+
+#why {
+  font-family: "Heebo", sans-serif;
+}
+#why .take {
+  color: #072F60;
+  padding-bottom: 50px;
+  position: relative;
+  font-size: 36px;
+  font-weight: 600;
+  z-index: 10;
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+#why .take::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 0;
+  background-color: #ffd24d;
+  width: 160px;
+  height: 25px;
+  border-radius: 15px;
+}
+#why .videos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  z-index: 2;
+}
+#why .videos .video {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+#why .videos .video .video-content {
+  padding-left: 40px;
+  padding-top: 190px;
+  position: relative;
+  background-image: url("https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2022/01/MKH283.jpg");
+  background-size: cover;
+  background-position: top;
+  box-shadow: inset 0px -11px 100px -1px rgba(0, 0, 0, 0.9);
+  scale: 1.1;
+  height: 100%;
+  border-radius: 7px;
+  transition: 0.5s ease-in-out;
+}
+#why .videos .video .video-content:hover {
+  scale: 1.2;
+}
+#why .videos .video .video-content p {
+  color: #fff;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+  transition: all 0.4s linear;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+#why .videos .video .video-content .play-button {
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#stories {
+  font-family: "Heebo", sans-serif;
+  padding-top: 120px;
+}
+#stories .storyContainer {
+  width: 98%;
+  margin-left: 2%;
+}
+#stories .succes {
+  color: #072F60;
+  padding-bottom: 50px;
+  position: relative;
+  font-size: 36px;
+  font-weight: 600;
+  z-index: 10;
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+#stories .succes::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 0;
+  background-color: #ffd24d;
+  width: 160px;
+  height: 25px;
+  border-radius: 15px;
+}
+#stories .story-wrapper .story {
+  background-color: #f6f7f9;
+  color: #072F60;
+  height: 500px;
+  margin-right: 30px;
+  margin-top: 100px;
+  position: relative;
+  border-radius: 7px;
+  height: 400px;
+}
+#stories .story-wrapper .story img {
+  position: absolute;
+  left: 12%;
+  top: -12%;
+}
+#stories .story-wrapper .story .story-content {
+  padding: 65px 65px 0 65px;
+}
+#stories .story-wrapper .story .story-content .person {
+  padding-top: 10px;
+  padding-left: 10px;
+  display: inline-block;
+}
+#stories .story-wrapper .story .story-content .person h4 {
+  font-size: 18px;
+}
+#stories .story-wrapper .story .story-content .person p {
+  font-size: 15px;
+  color: #666666;
+}
+#stories .story-wrapper .story .story-content i {
+  color: white;
+  background-color: #3BBCA7;
+  padding: 12px 15px;
+  border-radius: 50%;
+  font-size: 50px;
+  display: inline-block;
+}
+#stories .story-wrapper .story .story-content h2 {
+  padding-top: 30px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  padding-bottom: 40px;
+  margin: 0px;
+}
+
+#collab {
+  font-family: "Heebo", sans-serif;
+  padding: 50px 0;
+}
+#collab .collab-slider {
+  padding-top: 70px;
+  width: 60%;
+  height: 170px;
+  margin: auto;
+}
+#collab .collab-slider .coll_ {
+  padding: 0;
+  margin: 0;
+  width: 10px;
+  visibility: hidden;
+}
+#collab h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #072F60;
+  margin-left: 45%;
+  transform: translate(-45%);
+  text-align: center;
+}
+#collab h2 span {
+  color: #3BBCA7;
+}
+
+@media (max-width: 766px) {
+  #experience .ex-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+  #experience .ex-content .ex-left {
+    margin-right: 0;
+  }
+  #experience .ex-content .ex-right {
+    margin: 10%;
+  }
+  #experience .ex-content .ex-right .background .points {
+    margin-left: 60px;
+  }
+  #experience .ex-content .ex-right .persons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  #over {
+    margin-top: 400px;
+  }
+  #over .info {
+    padding: 40px 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  #featured .featured-wrapper .feature-head {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  #featured .featured-wrapper .feature-head h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+  }
+  #featured .featured-wrapper .feature-head .button-wrapper {
+    text-align: center;
+  }
+  #featured .featured-wrapper .topics {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #top-rated .button-wrapper {
+    padding: 80px;
+  }
+  #top-rated .top {
+    padding-top: 10px;
+    font-size: 27px;
+    margin-left: 0;
+    transform: translateX(0%);
+  }
+  #top-rated .tutorials {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #top-rated .tutorials .tutorial-wrapper .tutorial-hover {
+    position: absolute;
+    left: -2%;
+    top: -2%;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(59, 59, 59, 0.3725490196);
+    width: 104%;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+  }
+  #why .take {
+    font-size: 27px;
+    margin-left: 25%;
+    transform: translateX(0%);
+  }
+  #why .videos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #stories .succes {
+    font-size: 27px;
+    margin-left: 25%;
+    transform: translateX(0%);
+  }
+  #stories .story-wrapper .story .story-content {
+    padding: 65px 6% 0 6%;
+  }
+  #collab .h2 {
+    padding: 0;
+    width: 100%;
+    margin-left: 0%;
+    transform: translate(0%);
+  }
+  #collab .collab-slider {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media (max-width: 500px) {
+  #experience .ex-content .ex-right .background .blue-circle {
+    display: none;
+    visibility: hidden;
+  }
+  #experience .ex-content .ex-right .background .yellow-circle {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media (min-width: 1029px) and (max-width: 1390px) {
+  #experience {
+    width: 100%;
+  }
+  #experience .ex-content {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+  }
+  #experience .ex-content .ex-right img {
+    width: 100%;
+    height: 100%;
+  }
+  #experience .ex-content .ex-right .persons {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0%;
+    z-index: 10;
+  }
+  #experience .ex-content .ex-right .persons .orangeMan {
+    margin-top: 5px;
+    border-radius: 15px;
+    pointer-events: none;
+    width: 250px;
+    height: 330px;
+  }
+  #experience .ex-content .ex-right .persons .blueMan {
+    border-radius: 15px;
+    width: 210px;
+    height: 350px;
+  }
+  #top-rated .tutorials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #top-rated .tutorials .tutorial-hover {
+    position: absolute;
+    left: -8%;
+    top: -2%;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(59, 59, 59, 0.3725490196);
+    width: 116%;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+  }
+  #person {
+    padding-left: 0;
+    background-image: url("../imgs/back.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Heebo", sans-serif;
+  }
+  #person .person-wrapper {
+    margin-top: 20px;
+    padding-bottom: 10%;
+  }
+}
+@media (min-width: 767px) and (max-width: 1028px) {
+  #experience {
+    width: 100%;
+  }
+  #experience .ex-content {
+    width: 100%;
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 1fr;
+  }
+  #experience .ex-content .ex-left {
+    margin-right: 200px;
+  }
+  #experience .ex-content .ex-right {
+    margin-left: 80px;
+  }
+  #experience .ex-content .ex-right .blue-circle {
+    display: block;
+  }
+  #over .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  #featured .topics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #top-rated .top {
+    margin-left: 10%;
+    transform: translateX(0%);
+  }
+  #top-rated .tutorials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #top-rated .tutorials .tutorial-hover {
+    position: absolute;
+    left: -4%;
+    top: -2%;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(59, 59, 59, 0.3725490196);
+    width: 108%;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+  }
+  #why .videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #why .take {
+    margin-left: 20%;
+    transform: translateX(0%);
+  }
+  #stories .succes {
+    margin-left: 20%;
+    transform: translateX(0%);
+  }
+}/*# sourceMappingURL=style.css.map */
