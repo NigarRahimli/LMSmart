@@ -499,7 +499,7 @@ top: 2%;
   font-family: 'Heebo', sans-serif;
   .person-wrapper{
     margin-top: 20px;
-    padding-bottom: 12.5%;
+    padding-bottom: 4%;//bura
     display: grid;
     grid-template-columns: 1fr 1.3fr;
     gap: 5%;
@@ -585,7 +585,7 @@ top: 2%;
     .person-right{
         position: relative;
        .man{
-        position: absolute;
+        position: relative;
         z-index: 4;
         width: 475px;
         height: 507px;
@@ -917,7 +917,7 @@ h2{
 #why{
     .take{
         font-size: 27px;
-        margin-left: 25%;
+        margin-left: 10%;
         transform: translateX(-0%);
        
     }
@@ -928,9 +928,15 @@ h2{
 }
 #stories{
     .succes{
+        text-align: center;
         font-size: 27px;
-        margin-left: 25%;
+        margin-left: 5%;
+        padding-top: 5px;
         transform: translateX(-0%);
+        &::before{
+            
+            margin-left: 12%;
+        }
     }
 }
 #stories{
@@ -939,6 +945,36 @@ h2{
         .story{
             .story-content{
                 padding:65px 6% 0 6% ;}
+        }
+    }
+}
+
+#person{
+    .person-wrapper{
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 0;
+        margin-bottom: 50px;
+       
+        .person-right{
+            padding-bottom: 7%;//bura
+            .man{
+                margin-top: 30px;
+                width: 330px;
+                height: 354px;
+                left: 5%;
+                
+            }
+            .yellowcircle{
+                margin-top: 30px;
+                left: 5%;
+                width: 330px;
+                height: 350px;
+            }
+            .points{
+                display: none;
+                visibility: hidden;
+            }
         }
     }
 }
@@ -979,19 +1015,25 @@ h2{
     }
 }
 //
-// @media (min-width: 995px) and (max-width: 1205px) {
-//     #person{
-//         .person-wrapper{
-//             .person-right{
-//                 .man{
-//                     width: 400px;
-//                     height: 400px;
+@media (min-width: 995px) and (max-width: 1205px) {
+    #person{            
+        .person-wrapper{
+            padding-bottom: 4.5%;//bura
+            
+            .person-right{
+                .man{
+                    width: 406px;
+                    height: 434px;
                     
-//                 }
-//             }
-//         }
-//     }
-// }
+                }
+                .yellowcircle{
+                    width: 406px;
+                    height: 434px; 
+                }
+            }
+        }
+    }
+}
 
 //Ara
 @media (min-width: 1029px) and (max-width: 1390px) {
@@ -1143,6 +1185,25 @@ h2{
                
             }
         }
+    #person{
+        .person-wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 0;
+            .person-right{
+                .man{
+                    margin-top: 55px;
+                    width: 312px;
+                    height: 333px;
+                    
+                }
+                .yellowcircle{
+                    width: 312px;
+                    height: 333px;
+                }
+            }
+        }
+    }
     
     #stories{
         .succes{
